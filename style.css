@@ -1,0 +1,410 @@
+*{
+    margin: 0px ;
+    padding: 0px;
+}
+
+body{
+    background: black;
+    color: white;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.7)), url(images/background\ img.jpg);
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+.logo{
+    width: 12%;
+    margin-left: 40px;
+    cursor: pointer;
+    margin-top: 10px;
+
+}
+nav button{
+    width: 70%;
+    height: 7vh;
+    background-color: red;
+    color: white;
+    border-radius: 8px;
+    border: 1px solid red;
+    margin: 4px;
+    margin-top: -20px;
+    padding: 8px;
+}
+
+.english{
+    
+    background: transparent;
+    border: 1px solid white;
+    /* margin: 7px; */
+    
+}
+.english i{
+    cursor: pointer;
+}
+
+.signin{
+    width: 50%;
+    height: 6vh;
+    font-weight: bold;
+    
+}
+.container{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    margin-top: 25px;
+}
+.textbox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 6rem;
+}
+.text1{
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+
+}
+.text2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin: 9px;
+    letter-spacing: .7px;
+}
+.text3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    margin: 5px;
+    letter-spacing: 0.8px;
+}
+input{
+    height: 7vh;
+    width: 40vw;
+    margin: 8px 0px;
+    border: 1px solid white;
+    background: #212020ad;
+    color: white;
+   
+}
+
+.emailsign button{
+    height: 8vh;
+    width: 12vw;
+    background: red;
+    color: white;
+    border: 1px solid red;
+    font-size: 15px;
+
+}
+
+/* -------------------features---------- */
+.features{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+
+.card{
+    width: 283px;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    margin: 4px 15px;
+    background: linear-gradient(150deg, #E40913 -46.70%, #181049 48.45%);
+    border-radius: 4px;
+    border: 1px solid rgb(10, 10, 57);
+    
+}
+.image1{
+    width: 13vw;
+    margin: 10px 97px;
+}
+.image1 img{
+    width: 8vw;
+    filter: drop-shadow(0px 0px 9px #f3b8ff);
+    
+}
+.textsection{
+    margin: 8px 42px;
+}
+.textsection h3{
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-weight: 900;
+
+}
+.textsection p{
+    letter-spacing: 0.6px;
+    margin: 18px 0px;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+}
+.image2{
+    width: 13vw;
+    margin: 10px 22px;
+}
+.image2 img{
+    width: 15vw;
+    filter: drop-shadow(0px 0px 9px #f3b8ff);
+    
+}
+.image3{
+    width: 13vw;
+    margin: 8px 95px;
+}
+.image3 img{
+    width: 5.5vw;
+    filter: drop-shadow(0px 0px 9px #f3b8ff);
+    
+}
+.image4{
+    width: 13vw;
+    margin: 22px 95px;
+}
+.image4 img{
+    width: 7vw;
+    filter: drop-shadow(0px 0px 9px #f3b8ff);
+    
+}
+
+/* ---------question---- */
+.faq_questions_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+.frequent_ques{
+    width: 90%;
+    font-size: 26px;
+    margin-left: 17px;
+}
+.radio{
+    margin-top: 50px;
+    cursor: pointer;
+}
+.question_text{
+    flex-direction: column;
+    width: 90%;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    list-style-type: none;
+    
+}
+
+/* .question_text ul{
+    list-style-type: none;
+} */
+.question_text ul li{
+    display: flex;
+    flex-direction: column;
+}
+.question_text input{
+    width: 100%;
+    display: flex;
+    align-items: unset;
+    height: 2vh;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.question_text label{
+    width: 94%;
+    height: 13vh;
+    border: 1px solid #373535;
+    background: #272727;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    font-family: 'Lato';
+    padding-left: 20px;
+    border-radius: 3px;
+}
+.content{
+    width: 94%;
+    height: 13vh;
+    padding: 1px 15px;
+    margin: 5px 0px;
+    font-size: 18px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s, padding 0.3s;
+}
+label::after{
+    content:'+';
+    font-size: 34px;
+    position: absolute;
+    right: 130px;
+    transition: transform 0.3s;
+}
+input[type="radio"]{
+    display: none;
+}
+.question_text input[type="radio"]:checked + label + .content{
+    max-height: 20vh;
+    padding: 20px 10px;
+    /* font-size: 15px; */
+    background-color: #373535;
+}
+.question_text input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+.faq_questions_box small{
+    width: 90%;
+    margin-top: 34px;
+    font-size: 19px;
+}
+.faq_questions_box .emailsign{
+    width: 90%;
+    margin-top: 16px;
+    margin-bottom: 60px;
+}
+
+/* -----------footer------- */
+.footer{
+    padding: 50px 15% 30px;
+    border-top: 6px solid #b0afaf;
+    color: #8f8d8d;
+}
+.footer h2{
+    width: 90%;
+    color: rgb(216, 210, 210);
+    font-size: 18px;
+    font-family: 'Lato';
+    margin-left: -80px;
+}
+.footer .row{
+    width: 95%;
+    display: -webkit-box;
+    margin-left: -71px;
+    padding: 68px 0px;
+   
+}
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+
+}
+
+.footer .col a{
+    display: block;
+    text-decoration: none;
+    color: #a3a0a0;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer h3{
+    color: white;
+    font-family: 'lato';
+    margin-left: -70px;
+    font-size: 15px;
+}
+
+/*---------media query------ */
+@media only screen and (max-width: 600px){
+    .header{
+        height: 90vh;
+    }
+    .logo{
+        width: 25%;
+    }
+    .container{
+        width: 42%;
+        margin-right: 30px;
+    }
+    .english{
+        width: 120px;
+        height: 40px;
+    }
+    .signin{
+        width:90px ;
+        height: 38px;
+    }
+    .textbox{
+        margin-top: 10rem;
+    }
+    .text1{
+        margin: 6px 28px;
+    font-size: 20px;
+    }
+    .text2{
+        margin-left: -4rem;
+        font-size: 14px;
+    }
+    .text3{
+     font-size: 13px;
+     margin-left: 26px;
+    }
+    input{
+        margin-left: 26px;
+        width: 83vw;
+        padding-left: 12px;
+    }
+    .emailsign button{
+        width: 26vw;
+    margin-left: 29px;
+    }
+    .card{
+        width: 90vw;
+        height: 55vh;
+    }
+    .image1 img{
+        width: 30vw;
+    }
+    .image2 img{
+        width: 50vw;
+    }
+    .image3 img{
+        width: 25vw;
+    }
+    .image4 img{
+        width: 30vw;
+    }
+    .textsection h3{
+        font-size: 35px;
+    }
+    .textsection p{
+        font-size: 19px;
+    }
+    .question_text label{
+        height: 11vh;
+
+    }
+    label::after {
+        right: 25px;
+    }
+    .faq_questions_box input{
+        margin-left: 5px;
+    }
+    .faq_questions_box .emailsign button{
+        margin-left: 5px;
+    }
+    .footer h2{
+        margin-left: -20px;
+    }
+    .footer .row {
+        margin-left: -20px;
+        
+    }
+    .footer .col{
+        margin-bottom: 150px;
+        padding: 0px 10px;
+    }
+    
+}
